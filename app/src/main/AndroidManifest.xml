@@ -13,6 +13,12 @@
         android:theme="@style/Theme.AgroManager"
         tools:targetApi="31">
         <activity
+            android:name=".perfilPrueba"
+            android:exported="false" />
+        <activity
+            android:name=".MiPerfil"
+            android:exported="false" />
+        <activity
             android:name=".formRegistro"
             android:exported="false"
             android:theme="@style/Theme.AgroManager" />

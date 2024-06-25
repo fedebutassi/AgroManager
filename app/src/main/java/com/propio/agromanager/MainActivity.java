@@ -12,7 +12,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import android.view.View;
 import android.widget.Button;
-
+import android.widget.ImageButton;
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -53,6 +53,15 @@ public class MainActivity extends AppCompatActivity {
                 irRegistro(); // Call the method to navigate to forgot password screen
             }
         });
+        MiPerfil perfil = new MiPerfil();
+        ImageButton botonMiPerfil = findViewById(perfil.user);
+        botonMiPerfil.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                irMiPerfil();
+            }
+        });
+
     }
 
 
@@ -70,7 +79,10 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-
+    public void irMiPerfil(){
+        Intent intent = new Intent(this,MiPerfil.class);
+        startActivity(intent);
+    }
 }
 
 

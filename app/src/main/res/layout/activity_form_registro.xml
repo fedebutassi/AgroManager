@@ -174,20 +174,21 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="195dp"
+        android:layout_height="48dp"
         android:clickable="true"
         android:elegantTextHeight="true"
         android:focusable="true"
         android:focusableInTouchMode="true"
         android:minHeight="48dp"
         android:text="Ver políticas de privacidad"
+        android:textAlignment="center"
         android:textColor="#3F51B5"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.998"
+        app:layout_constraintVertical_bias="1.0"
         tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>
